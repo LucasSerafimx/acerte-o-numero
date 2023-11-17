@@ -18,6 +18,7 @@ function iniciarJogo(chute) {
     } else if (chute == numeroSecreto) {
       alert("Acertouuu!! o numero é: " + chute);
       numeroSecreto = parseInt(Math.random() * 1001);
+      alert("Você acertou em " + tentativas + " tentativas!");
       return;
     } else if (chute > numeroSecreto) {
       alert("Errou... o numero secreto é menor que: " + chute);
@@ -26,4 +27,4 @@ function iniciarJogo(chute) {
     }
   }
 }
-alert("Você acertou em " + tentativas + " tentativas!");
+
