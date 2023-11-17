@@ -12,7 +12,7 @@ function iniciarJogo(chute) {
     if (chute === null) {
       alert("Você saiu do jogo");
       return;
-    } else if (tentativas == 20) {
+    } else if (tentativas == 10) {
       alert("Você atingiu o maximo de tentativas, tente novamente");
       return;
     } else if (chute == numeroSecreto) {
@@ -22,8 +22,10 @@ function iniciarJogo(chute) {
       return;
     } else if (chute > numeroSecreto) {
       alert("Errou... o numero secreto é menor que: " + chute);
+      alert("Você acertou em " + tentativas + " tentativas!");
     } else if (chute < numeroSecreto) {
       alert("Errou... o numero secreto é maior que: " + chute);
+      alert("Você acertou em " + tentativas + " tentativas!");
     }
   }
 }
